@@ -10,12 +10,11 @@ body {
     color: #000449;
 }
 
+/* HEADER */
 
 .menu_responsive {
     display: none;
 }
-
-/* HEADER */
 
 header {
     width: 100%;
@@ -109,7 +108,7 @@ header {
 }
 
 .title_up {
-    width: 100%;
+    width: 70vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -518,7 +517,7 @@ footer {
 }
 
 .footer_content_right {
-    width: 380px;
+    width: 375px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -619,6 +618,7 @@ footer {
         align-items: center;
         text-align: center;
         padding: 0;
+        width: 360px;
     }
 }
 
@@ -810,7 +810,7 @@ footer {
     }
 
     .workflow_content_cards_content {
-        width: 360px;
+        width: 320px;
         height: 220px;
         margin-bottom: 25px;
     }
@@ -826,8 +826,20 @@ footer {
 }   
 
 @media only screen and (max-width: 576px) {
+    .title_up {
+        max-width: 360px;
+    }
+
+    .banner_home_content_text {
+        max-width: 360px;
+    }
+
+    .banner_home {
+        height: 600px;
+    }
+
     .data_animation {
-        height: 550px; 
+        height: 600px; 
     }
     .counter {
         flex-direction: column;
@@ -836,11 +848,11 @@ footer {
     }
 
     .title_up img {
-        width: 120px;
+        width: 100px;
     }
 
     .title_up h1 {
-        font-size: 4.8rem;
+        font-size: 4.6rem;
     }
 
     .title_down h2 {
@@ -848,7 +860,7 @@ footer {
     }
 
     footer {
-        height: 200px;
+        height: 220px;
     }
 
     .footer_content {
@@ -859,6 +871,102 @@ footer {
 
     .footer_content_right {
         width: 160px;
-        margin-top: 30px;
+    }
+
+    .footer_content_left {
+        margin-bottom: 45px;
     }
 } 
+
+
+
+/* O QUE FAZEMOS */
+
+/* MAIN BANNER */
+
+.main_banner {
+    background-image: url("imgs/fundo_services.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_banner_content {
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    width: 70vw;
+    color: white;
+}
+
+.main_banner_content h1 {
+    font-size: 4.6rem;
+    font-weight: 800;
+}
+
+.main_banner_content p {
+    font-size: 1.8rem;
+}
+
+/* SERVICES TITLE */
+
+.services_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services_head_content {
+    margin-top: 60px;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services_head_content_left {
+    width: 40%;
+}
+
+.services_head_content_left_title h1 {
+    font-size: 4.3rem;
+    font-weight: 800;
+}
+
+.services_head_content_left_title_down {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -15px;
+}
+
+.services_head_content_left_title_down h1 {
+    margin-left: 13px;
+    margin-top: -30px;
+}
+
+.services_head_content_left_title_down img {
+    width: 70px;
+    height: 8px;
+}
+
+.services_head_content_right {
+    width: 60%;
+}
+
+.services_head_content_right img {
+    width: 100%;
+}
+
+.services_head_content_left_text {
+    max-width: 400px;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+}
